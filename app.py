@@ -5,9 +5,9 @@ import numpy as np
 app = Flask(__name__)
 
 # Load saved model and preprocessors
-model = joblib.load('C:/Users/natna/OneDrive/Desktop/Cancer Research/svm_model.pkl')
-scaler = joblib.load('C:/Users/natna/OneDrive/Desktop/Cancer Research/scaler.pkl')
-pca = joblib.load('C:/Users/natna/OneDrive/Desktop/Cancer Research/pca.pkl')
+model = joblib.load('svm_model.pkl')
+scaler = joblib.load('scaler.pkl')
+pca = joblib.load('pca.pkl')
 
 @app.route('/predict', methods=['POST'])
 def predict():
